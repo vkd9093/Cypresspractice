@@ -1,0 +1,412 @@
+{
+        
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://io.mastery.egress/v2/Customer",
+    "type": "object",
+    "title": "Customer",
+    "description": "The model for the customer object sent out of the egress.",
+    "required": [
+        "eventType",
+        "id"
+    ],
+    "properties": {
+        "eventType": {
+            "type": "string",
+            "minLength": 1,
+            "description": "This indicates the type of event"
+        },
+        "id": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Internal Master Mind ID for Customer"
+        },
+        "code": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "description": "A uniqueID exposed on the UI that can be searched throughout the TMS."
+        },
+        "name": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "description": "This is where a descriptive location Customer Name would be displayed throughout the TMS."
+        },
+        "statusTerm": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "$comment": "Data Dictionary: customerStatusType",
+            "description": "This is where the current status of a customer would be displayed."
+        },
+        "levelTerm": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "$comment": "Data Dictionary: customerLevelType",
+            "description": "The intent with level is to identify the level of the Customer within your organization. These values can be client defined or selected using preconfigured values: Bronze, Silver, Gold, Platinum. The Client is able to indicate the business rules that drive level - in the future there can be automated processes if this isn't indicated within a legacy system."
+        },
+        "opportunityTerm": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "$comment": "Data Dictionary: customerOpportunityType",
+            "description": "This is where the level of customer Opportunity will be displayed. The intent is to automate the level of opportunity the Client can have with the customer based on company size, transporation spend, etc."
+        },
+        "insuranceCargo": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "minimum": 0,
+            "maximum": 8640000000000000,
+            "description": "This is where the Cargo Insurance for a customer will be displayed. If not indicated, this should default to $100K."
+        },
+        "insuranceGeneral": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "minimum": 0,
+            "maximum": 8640000000000000,
+            "description": "This is where the General Insurance for a customer will be displayed. Most commonly will be $1,000,000 (will be defined upon implementation."
+        },
+        "insuranceLiability": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "minimum": 0,
+            "maximum": 8640000000000000,
+            "description": "This is where the Liability Insurance for a customer will be displayed. Most commonly will be $1,000,000 (will be defined upon implementation."
+        },
+        "phoneNumber": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "description": "The customer Phone Number that will be displayed in the TMS per customer location."
+        },
+        "notes": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "description": "This is where a user's free form text notes would be displayed."
+        },
+        "addresses": {
+            "type": [
+                "array",
+                "null"
+            ],
+            "description": "A collection of addresses associated with the Customer. Addresses are not required.",
+            "items": {
+                "type": "object",
+                "title": "Address",
+                "description": "",
+                "properties": {
+                    "id": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "minLength": 1,
+                        "description": "Internal Master Mind ID for customer address"
+                    },
+                    "typeTerm": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "minLength": 1,
+                        "$comment": "Data Dictionary: customerAddressType",
+                        "description": "This is where the CustomerAddress \"Type\" will be displayed (MasterMind will require a minimum of 1 address entered to create a customer) - Example: Billing, Main."
+                    },
+                    "street1": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "minLength": 1,
+                        "description": "This is where the Street Name of a customer's address will be displayed."
+                    },
+                    "street2": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "description": "This would serve as an optional 2nd line of Street1 (Example: P.O. Box, ApartmentNumber, etc)."
+                    },
+                    "city": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "minLength": 1,
+                        "description": "This is where the customer's address City will be displayed."
+                    },
+                    "state": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "minLength": 1,
+                        "description": "This is where the State of a customer's address will be displayed."
+                    },
+                    "country": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "minLength": 1,
+                        "description": "This is where the Country of a customer's address will be displayed."
+                    },
+                    "postal_code": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "minLength": 1,
+                        "description": "This is where the Postalcode of a customer address will be displayed."
+                    },
+                    "main": {
+                        "type": [
+                            "boolean",
+                            "null"
+                        ],
+                        "description": "This is where a user can flag to indicate a customer address as the \"Main\" address for a given customer. Only one main address is allowed."
+                    },
+                    "createdDateTime": {
+                        "type": [
+                            "number",
+                            "null"
+                        ],
+                        "description": "This is the date time of when the address was created."
+                    },
+                    "lastUpdatedDateTime": {
+                        "type": [
+                            "number",
+                            "null"
+                        ],
+                        "description": "This is the date time of the last update to the address."
+                    }
+                }
+            }
+        },
+        "contacts": {
+            "type": [
+                "array",
+                "null"
+            ],
+            "description": "A collection of contacts associated with the Customer. Contacts are not required, but if a contact is included it must include one of the following fields: emailAddress, phoneNumber, faxNumber.",
+            "items": {
+                "type": "object",
+                "title": "Contact",
+                "description": "",
+                "required": [
+                    "id"
+                ],
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "minLength": 1,
+                        "description": "Internal Master Mind ID for Contact"
+                    },
+                    "typeTerm": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "minLength": 1,
+                        "$comment": "Data Dictionary: customerContactType",
+                        "description": "This is where the type of customer contact would be displayed (Examples:  Primary, Dispatch, Billing, etc)."
+                    },
+                    "name": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "minLength": 1,
+                        "description": "This is where a customer contact's First and Last name will be displayed."
+                    },
+                    "emailAddress": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "description": "This is where an email address will display in relation to a specific customer contact. Will be used to identify recipient of manual/automatic tendering, billing information, etc."
+                    },
+                    "phoneNumber": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "description": "This is where the customer contact's phone number will be displayed in the TMS."
+                    },
+                    "extension": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "description": "This is where a customer's phone extension will be displayed in the TMS."
+                    },
+                    "faxNumber": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "description": "This is where a customer's fax number will be displayed in the TMS."
+                    },
+                    "active": {
+                        "type": [
+                            "boolean",
+                            "null"
+                        ],
+                        "description": "This represents contact is active or not.",
+                        "deprecated": true
+                    },
+                    "isActive": {
+                        "type": [
+                            "boolean",
+                            "null"
+                        ],
+                        "description": "This represents contact is active or not."
+                    },
+                    "createdDateTime": {
+                        "type": [
+                            "number",
+                            "null"
+                        ],
+                        "description": "This is the date time of when the contact was created."
+                    },
+                    "lastUpdatedDateTime": {
+                        "type": [
+                            "number",
+                            "null"
+                        ],
+                        "description": "This is the date time of the last update to the contact."
+                    }
+                }
+            }
+        },
+        "identifiers": {
+            "type": [
+                "array",
+                "null"
+            ],
+            "description": "A collection of keys associated with the Customer to identify them throughout the clients organization. Identifiers are not required.",
+            "items": {
+                "type": "object",
+                "title": "Identifier",
+                "description": "",
+                "required": [
+                    "typeTerm",
+                    "value"
+                ],
+                "properties": {
+                    "typeTerm": {
+                        "type": "string",
+                        "minLength": 1,
+                        "description": "This is where a unique customer's connectivity \"type\" will be displayed (EDI, OTM, etc). Currently defined as a \"System\" within MasterMind."
+                    },
+                    "value": {
+                        "type": "string",
+                        "minLength": 1,
+                        "description": "This is where a unique ID will be displayed in correlation to the identifier type. Alpha and numeric values are supported."
+                    }
+                }
+            }
+        },
+        "reps": {
+            "type": [
+                "array",
+                "null"
+            ],
+            "description": "A collection of employees associated with the customer. Reps are not required.",
+            "items": {
+                "type": "object",
+                "title": "EmployeeRep",
+                "description": "",
+                "required": [
+                    "id"
+                ],
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "minLength": 1,
+                        "description": "This is where a unique customer Rep Id will be displayed"
+                    },
+                    "employeeId": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "description": "employee.id of Reps."
+                    },
+                    "employeeCode": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "description": "A unique ID exposed on the UI that can be searched within the TMS. This can also be used a reference ID to a Client's legacy system where B2B integrations are in place."
+                    },
+                    "typeTerm": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "description": "This is where a customer rep \"type\" would be displayed."
+                    },
+                    "isMain": {
+                        "type": [
+                            "boolean",
+                            "null"
+                        ],
+                        "description": "This is where a user can indicate an individual customer Rep's alignment to a customer. Only 1 main customer rep allowed."
+                    },
+                    "isLoad": {
+                        "type": [
+                            "boolean",
+                            "null"
+                        ]
+                    }
+                }
+            }
+        },
+        "createdDateTime": {
+            "type": [
+                "number",
+                "null"
+            ],
+            "description": "This is the date time of when the customer was created."
+        },
+        "createdBy": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "description": "This is the id of the user who created the customer."
+        },
+        "lastUpdatedDateTime": {
+            "type": [
+                "number",
+                "null"
+            ],
+            "description": "This is the date time of the last update to the customer."
+        },
+        "lastUpdatedBy": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "description": "This is the id of the user who last updated the customer."
+        }
+    }
+  
+
+}

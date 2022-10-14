@@ -1,0 +1,7 @@
+{
+    "token":"https://id.mm100nonprod.mastermindtms.com/auth/realms/test.mm100.mastermindtms.com/protocol/openid-connect/token",
+    "customerUrl":"https://api.test.mm100.mastermindtms.com/customers",
+    "facilityUrl":"https://api.test.mm100.mastermindtms.com/facilities",
+    "carrierUrl":"https://api.test.mm100.mastermindtms.com/carriers",
+    "loadUrl":"https://api.test.mm100.mastermindtms.com/loads"
+    }
