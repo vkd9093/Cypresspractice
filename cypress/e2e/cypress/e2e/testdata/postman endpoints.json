@@ -1,0 +1,7 @@
+{
+    "customerUrl":"https://api.test.mm100.mastermindtms.com/customers",
+    "facilityUrl":"https://api.test.mm100.mastermindtms.com/facilities",
+    "carrierUrl":"https://api.test.mm100.mastermindtms.com/carriers",
+    "loadUrl":"https://api.test.mm100.mastermindtms.com/loads",
+    "ediLoadurl":"https://rest.test.mm100.mastermindtms.com/edi/orderful/message/inbound/204/3"
+    }

@@ -1,0 +1,404 @@
+{"body":{
+    "message": {
+        "content" : {
+      "transactionSets": [
+        {
+          "transactionSetHeader": [
+            {
+              "transactionSetIdentifierCode": "204",
+              "transactionSetControlNumber": "00001"
+            }
+          ],
+          "beginningSegmentForShipmentInformationTransaction": [
+            {
+              "standardCarrierAlphaCode": "MOLY",
+              "shipmentIdentificationNumber": "EDIPro2006",
+              "weightUnitCode": "L",
+              "shipmentMethodOfPaymentCode": "PP"
+            }
+          ],
+          "setPurpose": [
+            {
+              "transactionSetPurposeCode": "01",
+              "applicationTypeCode": "LT"
+            }
+          ],
+          "businessInstructionsAndReferenceNumber": [
+            {
+              "referenceIdentification": "PO9876",
+              "referenceIdentificationQualifier": "PO"
+            },
+            {
+              "referenceIdentification": "ZZ1234",
+              "referenceIdentificationQualifier": "ZZ"
+            },
+            {
+              "referenceIdentification": "CN9876",
+              "referenceIdentificationQualifier": "CN"
+            },
+            {
+              "referenceIdentification": "BM1234",
+              "referenceIdentificationQualifier": "BM"
+            },
+            {
+              "referenceIdentification": "CR9876",
+              "referenceIdentificationQualifier": "CR"
+            },
+            {
+              "referenceIdentification": "SI1234",
+              "referenceIdentificationQualifier": "SI"
+            }
+          ],
+          "dateTime": [
+            {
+              "dateQualifier": "64",
+              "date": "20220919",
+              "timeQualifier": "1",
+              "time": "1100",
+              "timeCode": "UT"
+            }
+          ],
+          "palletShipmentInformation": [
+            {
+              "quantityOfPalletsShipped": "25",
+              "palletExchangeCode": "1",
+              "weightUnitCode": "L",
+              "weight": "46714.00"
+            }
+          ],
+          "noteSpecialInstruction": [
+            {
+              "description": "TOTAL DISTANCE = 787 MI"
+            }
+          ],
+          "N1_loop": [
+            {
+              "partyIdentification": [
+                {
+                  "entityIdentifierCode": "BT",
+                  "name": "Acc cement",
+                  "identificationCodeQualifier": "93",
+                  "identificationCode": "ACC001"
+                }
+              ],
+              "partyLocation": [
+                {
+                  "addressInformation": "Street 01"
+                }
+              ],
+              "geographicLocation": [
+                {
+                  "cityName": "Adelphia",
+                  "stateOrProvinceCode": "NJ",
+                  "postalCode": "07710",
+                  "countryCode": "USA"
+                }
+              ]
+            },
+            {
+              "partyIdentification": [
+                {
+                  "identificationCode": "EDI1010",
+                  "entityIdentifierCode": "ZZ",
+                  "identificationCodeQualifier": "ZZ"
+                }
+              ]
+            }
+          ],
+          "N7_loop": [
+            {
+              "equipmentDetails": [
+                {
+                  "equipmentNumber": "1212",
+                  "equipmentDescriptionCode": "TV",
+                  "equipmentLength": "4800"
+                }
+              ],
+              "measurements": [
+                {
+                  "measurementReferenceIDCode": "TE",
+                  "unitOrBasisForMeasurementCode": "FA",
+                  "rangeMinimum": "10",
+                  "rangeMaximum": "20"
+                }
+              ]
+            }
+          ],
+          "S5_loop": [
+            {
+              "stopOffDetails": [
+                {
+                  "stopSequenceNumber": "1",
+                  "stopReasonCode": "CL",
+                  "weight": "40635",
+                  "weightUnitCode": "L",
+                  "numberOfUnitsShipped": "960",
+                  "unitOrBasisForMeasurementCode": "CA",
+                  "volume": "1054.73",
+                  "volumeUnitQualifier": "E"
+                }
+              ],
+              "businessInstructionsAndReferenceNumber": [
+                {
+                  "referenceIdentification": "SI9876",
+                  "referenceIdentificationQualifier": "SI"
+                },
+                {
+                  "referenceIdentification": "PO1234",
+                  "referenceIdentificationQualifier": "PO"
+                }
+              ],
+              "dateTime": [
+                {
+                  "dateQualifier": "37",
+                  "date": "20220919",
+                  "timeQualifier": "U",
+                  "time": "1400"
+                },
+                {
+                  "dateQualifier": "38",
+                  "date": "20220919",
+                  "timeQualifier": "U",
+                  "time": "1400"
+                }
+              ],
+              "palletShipmentInformation": [
+                {
+                  "quantityOfPalletsShipped": "10",
+                  "palletExchangeCode": "1",
+                  "weightUnitCode": "L",
+                  "weight": "46714.00"
+                }
+              ],
+              "noteSpecialInstruction": [
+                {
+                  "noteReferenceCode": "ZZZ",
+                  "description": "Stop Test Notes for Pickup"
+                }
+              ],
+              "N1_loop": [
+                {
+                  "partyIdentification": [
+                    {
+                      "entityIdentifierCode": "CN",
+                      "name": "Acc warehouse",
+                      "identificationCodeQualifier": "ZZ",
+                      "identificationCode": "ACC002"
+                    }
+                  ],
+                  "partyLocation": [
+                    {
+                      "addressInformation": "Near Building"
+                    }
+                  ],
+                  "geographicLocation": [
+                    {
+                      "cityName": "Adelphia",
+                      "stateOrProvinceCode": "NJ",
+                      "postalCode": "07710",
+                      "countryCode": "USA"
+                    }
+                  ]
+                }
+              ],
+              "OID_loop": [
+                {
+                  "orderInformationDetail": [
+                    {
+                      "referenceIdentification": "SI",
+                      "purchaseOrderNumber": "0524939135",
+                      "packagingFormCode": "PC",
+                      "quantity": "960",
+                      "weightUnitCode": "L",
+                      "weight": "40635"
+                    }
+                  ],
+                  "L5_loop": [
+                    {
+                      "descriptionMarksAndNumbers": [
+                        {
+                          "ladingLineItemNumber": "1",
+                          "ladingDescription": "CHED COL 40LB",
+                          "commodityCode": "50",
+                          "commodityCodeQualifier": "N"
+                        }
+                      ],
+                      "shipmentWeightPackagingAndQuantityData": [
+                        {
+                          "weightQualifier": "G",
+                          "weightUnitCode": "L",
+                          "weight": "39360",
+                          "ladingQuantity": "960"
+                        }
+                      ]
+                    },
+                    {
+                      "descriptionMarksAndNumbers": [
+                        {
+                          "commodityCode": "50",
+                          "ladingDescription": "CHEP PALLET",
+                          "ladingLineItemNumber": "2",
+                          "commodityCodeQualifier": "N"
+                        }
+                      ],
+                      "shipmentWeightPackagingAndQuantityData": [
+                        {
+                          "weight": "1275",
+                          "weightUnitCode": "L",
+                          "ladingQuantity1": "17",
+                          "weightQualifier": "G"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "stopOffDetails": [
+                {
+                  "weight": "40635",
+                  "stopReasonCode": "CU",
+                  "weightUnitCode": "L",
+                  "stopSequenceNumber": "99",
+                  "numberOfUnitsShipped": "960",
+                  "unitOrBasisForMeasurementCode": "PC"
+                }
+              ],
+              "businessInstructionsAndReferenceNumber": [
+                {
+                  "referenceIdentification": "SI9876",
+                  "referenceIdentificationQualifier": "SI"
+                },
+                {
+                  "referenceIdentification": "PO1234",
+                  "referenceIdentificationQualifier": "PO"
+                }
+              ],
+              "dateTime": [
+                {
+                  "date": "20220920",
+                  "dateQualifier": "53",
+                  "timeQualifier": "U",
+                  "time": "1600"
+                },
+                {
+                  "date": "20220920",
+                  "dateQualifier": "54",
+                  "timeQualifier": "U",
+                  "time": "1600"
+                }
+              ],
+              "palletShipmentInformation": [
+                {
+                  "quantityOfPalletsShipped": "10",
+                  "palletExchangeCode": "1",
+                  "weightUnitCode": "L",
+                  "weight": "46714.00"
+                }
+              ],
+              "noteSpecialInstruction": [
+                {
+                  "noteReferenceCode": "ZZZ",
+                  "description": "Stop Test Notes for Delivery"
+                }
+              ],
+              "N1_loop": [
+                {
+                  "partyLocation": [
+                    {
+                      "addressInformation": "Near Warehouse"
+                    }
+                  ],
+                  "geographicLocation": [
+                    {
+                      "cityName": "Atlanta",
+                      "postalCode": "30333",
+                      "countryCode": "USA",
+                      "stateOrProvinceCode": "GA"
+                    }
+                  ],
+                  "partyIdentification": [
+                    {
+                      "name": "Pravin construction",
+                      "identificationCode": "PRAVIN001",
+                      "entityIdentifierCode": "SH",
+                      "identificationCodeQualifier": "ZZ"
+                    }
+                  ]
+                }
+              ],
+              "OID_loop": [
+                {
+                  "L5_loop": [
+                    {
+                      "descriptionMarksAndNumbers": [
+                        {
+                          "commodityCode": "50",
+                          "ladingDescription": "CHED COL 40LB",
+                          "ladingLineItemNumber": "1",
+                          "commodityCodeQualifier": "N"
+                        }
+                      ],
+                      "shipmentWeightPackagingAndQuantityData": [
+                        {
+                          "weight": "39360",
+                          "ladingQuantity": "960",
+                          "weightUnitCode": "L",
+                          "weightQualifier": "G"
+                        }
+                      ]
+                    },
+                    {
+                      "descriptionMarksAndNumbers": [
+                        {
+                          "commodityCode": "50",
+                          "ladingDescription": "CHEP PALLET",
+                          "ladingLineItemNumber": "2",
+                          "commodityCodeQualifier": "N"
+                        }
+                      ],
+                      "shipmentWeightPackagingAndQuantityData": [
+                        {
+                          "weight": "1275",
+                          "weightUnitCode": "L",
+                          "ladingQuantity1": "17",
+                          "weightQualifier": "G"
+                        }
+                      ]
+                    }
+                  ],
+                  "orderInformationDetail": [
+                    {
+                      "weight": "40635",
+                      "quantity": "960",
+                      "weightUnitCode": "L",
+                      "packagingFormCode": "PC",
+                      "purchaseOrderNumber": "0524939135",
+                      "referenceIdentification": "SI"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "totalWeightAndCharges": [
+            {
+              "weight": "40635",
+              "weightQualifier": "G",
+              "freightRate": "3104.92",
+              "rateValueQualifier": "FR"
+            }
+          ],
+          "transactionSetTrailer": [
+            {
+              "numberOfIncludedSegments": "27",
+              "transactionSetControlNumber": "00001"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
+}

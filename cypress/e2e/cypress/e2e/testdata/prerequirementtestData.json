@@ -1,0 +1,209 @@
+
+{"customerBody":{
+  "code": "TESTAPI07",
+  "name": "test api customer 07",
+  "statusTerm": "Active",
+  "phoneNumber": "4025551213",
+  "addresses": [
+    {
+      "typeTerm": "office",
+      "street1": "1721 Vinton St",
+      "street2": "Ste 302",
+      "city": "Omaha",
+      "state": "NE",
+      "country": "USA",
+      "postalCode": "68108",
+      "main": true
+    }
+  ],
+  "contacts": [
+    {
+      "typeTerm": "ACCOUNTS PAYABLE",
+      "name": "Fred Sanford",
+      "emailAddress": "brian.moffatt@mastery.net",
+      "phoneNumber": "4025551213",
+      "extension": "200",
+      "faxNumber": "4025551413"
+    }
+  ],
+  "identifiers": [
+    {
+      "typeTerm": "EDI",
+      "value": "EDI9093"
+    }
+  ],
+  "levelTerm": "Silver",
+  "opportunityTerm": "Gold",
+  "insuranceCargo": 10000,
+  "insuranceGeneral": 5000,
+  "insuranceLiability": 8000,
+  "notes": "Adding notes for this field"
+},
+"carrierBody":{
+  "code": "APIRV05",
+  "name": "APIRVCrrier04",
+    "carrierStatus":"approved",
+  "standings": null,
+  "typeTerm": "carrier",
+  "dotNumber": "902833",
+  "levelTerm": "bronze",
+  "mcNumber": "7378333",
+  "notes": "Adding notes for the memo field",
+  "opportunityTerm": "gold",
+  "phoneNumber": "4025551212",
+  "scacNumber": "927334",
+  "parentCarrierCode": null,
+  "voucherSettings": {
+    "paymentTerm": "Net 30",
+    "paymentMethodTerm": "Check",
+    "currencyCodeTerm": "USD",
+    "voucherMethodTerm": "Print",
+    "remittanceToCarrierCode": "BURT",
+    "remittanceEmailAddress": "burt@mastery.net",
+    "remittanceGroupingTerm": "Route",
+    "remittanceAddress": {
+      "typeTerm": "Billing",
+      "street1": "1720 Vinton St",
+      "street2": "Office 1",
+      "city": "Omaha",
+      "state": "NE",
+      "country": "USA",
+      "postalCode": "68008",
+      "isMain": true
+    }
+  },
+  "addresses": [
+    {
+      "addressType": "Billing",
+      "street1": "1718 Vinton St",
+      "street2": "Bldg 1",
+      "city": "Omaha",
+      "state": "NE",
+      "country": "USA",
+      "postalCode": "68008",
+      "main": true
+    }
+  ],
+  "contacts": [
+    {
+      "contactType": "billing",
+      "name": "API User1",
+      "emailAddress": "apiuser1@mastery.net",
+      "phoneNumber": "4025551300",
+      "extension": "122",
+      "faxNumber": "4025551200"
+    }
+  ],
+  "identifiers": [
+    {
+      "type": "edi",
+      "value": "apiuser1"
+    }
+  ],
+  "insurance": [
+    {
+      "carrierInsuranceType": "Cargo",
+      "effectiveDate": "20210525",
+      "expirationDate": "20230824",
+      "identification": "AllStateAPI",
+      "insurer": "AllState",
+      "limit": 1,
+      "producer": "API1",
+      "exemptions": "Test API"
+    }
+  ],
+  "reps": [
+    {
+      "employeeId": "1208",
+      "main": true,
+      "isLoad": true,
+      "repType": "carrierOps"
+    }
+  ],
+  "certifications": [
+    {
+      "typeTerm": "carb",
+      "expirationDate": "2022-08-24",
+      "notes": "No accidents the past 5 days!"
+    }
+  ],
+  "services": [
+    {
+      "typeTerm": "Equipment Pool",
+      "notes": "Sharing all the equipment with the other companies!@#"
+    }
+  ],
+  "electronicTracking": {
+    "typeTerm": "fourkites",
+    "methodTerm": "eld"
+  },
+  "geographySettings": null
+},
+"facilityPickup":{
+  "code": "APICY0202",
+  "name": "APICYFacility0202",
+  "facilityStatus": "active",
+  "facilityType": "Warehouse",
+  "phoneNumber": "4026548522",
+  "addresses": [
+    {
+      "addressType": "Shipping",
+      "street1": "1712 Washington St",
+      "street2": "Ste 147",
+      "city": "Blair",
+      "state": "NE",
+      "country": "US",
+      "postalCode": "68008",
+      "main": true
+    }
+  ],
+  "contacts": [
+    {
+      "contactType": "Shipping",
+      "name": "Super Fancy",
+      "emailAddress": "api.user0113Bapi7B@mastery.net",
+      "phoneNumber": "7123235844",
+      "extension": "144",
+      "faxNumber": "4026669988",
+      "isMain": true
+    }
+  ],
+  "schedulingSystem": "3G TMS",
+  "internalNotes": "Update in the notes",
+  "externalNotes": "TESTING",
+  "scaleNotes": "DO NOT SCALE"
+},
+"facilityDelivery":{
+  "code": "APICY0201",
+  "name": "APICYFacility0201",
+  "facilityStatus": "active",
+  "facilityType": "Warehouse",
+  "phoneNumber": "4026548522",
+  "addresses": [
+    {
+      "addressType": "Shipping",
+      "street1": "6 Princeton Way",
+      "city": "Anniston",
+      "state": "AL",
+      "country": "US",
+      "postalCode": "6836207-1049008",
+      "main": true
+    }
+  ],
+  "contacts": [
+    {
+      "contactType": "Shipping",
+      "name": "Super Fancy",
+      "emailAddress": "api.user0113Bapi7B@mastery.net",
+      "phoneNumber": "7123235844",
+      "extension": "144",
+      "faxNumber": "4026669988",
+      "isMain": true
+    }
+  ],
+  "schedulingSystem": "3G TMS",
+  "internalNotes": "Update in the notes",
+  "externalNotes": "TESTING",
+  "scaleNotes": "DO NOT SCALE"
+
+}}

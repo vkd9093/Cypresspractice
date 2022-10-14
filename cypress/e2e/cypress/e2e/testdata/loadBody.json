@@ -1,0 +1,157 @@
+{
+  "order": {
+    "code": "TESTAPI6656C",
+    "customerCode": "TESTAPI03",
+    "activationStatusTerm": "Active",
+    "tenderStatusTerm": "Accepted",
+    "modeTerm": "truck",
+    "sizeTerm": "FTL",
+    "equipment": {
+      "trailerTypeTerms": [
+        "Van"
+      ],
+      "dimensions": {
+        "minimumLength": {
+          "value": 53,
+          "unitTerm": "ft"
+        },
+        "width": {
+          "value": 140,
+          "unitTerm": "in"
+        },
+        "height": {
+          "value": 120,
+          "unitTerm": "in"
+        }
+      }
+    },
+    "commodities": [
+      {
+        "code": "7153",
+        "description": "jigs",
+        "expectedWeight": {
+          "value": 12377,
+          "unitTerm": "g"
+        },
+        "expectedPieces": 23,
+        "number": 3,
+        "packagingUnit": "Bag",
+        "loadOnTerm": "floor",
+        "isHazmat": true,
+        "isTempControlled": true,
+        "stopCodes": [
+          "0608A",
+          "0608B"
+        ]
+      }
+    ],
+    "requirementTerms": [
+      "hazmat"
+    ],
+    "billToCustomerCode": "TESTAPI03",
+    "tenderFromCustomerCode": null,
+    "reasonCodeTerm": null,
+    "quoteTypeTerm": "Spot",
+    "priceTierTerm": "primary",
+    "relationTerm": "Transact",
+    "divisionTerm": "Managed",
+    "segmentCode": "SEG01",
+    "project": "project X",
+    "serviceLevelTerm": "standard",
+    "notes": "Adding notes here thanks!",
+    "rateLineItems": [
+      {
+        "code": "0525",
+        "typeTerm": "Flat rate",
+        "ratePerUnit": {
+          "amount": 39,
+          "currencyCodeTerm": "usd"
+        },
+        "units": 4
+      }
+    ],
+    "cargoInsurance": {
+      "amount": 100,
+      "currencyCodeTerm": "usd"
+    },
+    "references": [
+      {
+        "value": "0913B",
+        "qualifierTerm": "PU"
+      }
+    ],
+    "associatedReps": [
+      {
+        "employeeCode": "1208",
+        "customerRepTypeTerm": "customer ops manager",
+        "main": true
+      }
+    ]
+  },
+  "stops": [
+    {
+      "code": "0608A",
+      "sequenceNumber": 1,
+      "facilityCode": "APICY0101",
+      "typeTerm": "PU",
+      "availableStartDateTime": "1664685038391",
+      "availableEndDateTime": "1664710238391",
+      "scheduleTypeTerm": "appt",
+      "liveDropTerm": "live",
+      "workTerm": "driverAssist",
+      "unloadFromTerm": "side only",
+      "loadFromTerm": "side only",
+      "notes": "Filling in the notes field for this test",
+      "requestedDate": "2022-10-02",
+      "appointmentStartDateTime": "1664703038391",
+      "appointmentEndDateTime": "1664706638391",
+      "appointmentRequestedWith": "Mr. Daiwa",
+      "appointmentRequestedConfirmWith": "Bob Berkley",
+      "isConfirmedAppointment": true,
+      "requirementTerms": [
+        "tradeshow"
+      ],
+      "references": [
+        {
+          "value": "0913C",
+          "qualifierTerm": "PO"
+        }
+      ]
+    },
+    {
+      "code": "0608C",
+      "sequenceNumber": 3,
+      "facilityCode": "APICY0201",
+      "typeTerm": "TD",
+      "availableStartDateTime": "1665030638391",
+      "availableEndDateTime": "1665059438391",
+      "scheduleTypeTerm": "appt",
+      "liveDropTerm": "dropOnly",
+      "workTerm": "driverAssist",
+      "unloadFromTerm": "side only",
+      "loadFromTerm": "side only",
+      "notes": "Filling in the notes field for this test",
+      "requestedDate": "2022-10-06",
+      "appointmentStartDateTime": "1665048638391",
+      "appointmentEndDateTime": "1665055838391",
+      "appointmentRequestedWith": "Al Lindner",
+      "appointmentRequestedConfirmWith": "Mr. Shimano",
+      "isConfirmedAppointment": true,
+      "requirementTerms": [
+        "tradeshow"
+      ],
+      "references": [
+        {
+          "value": "0913C",
+          "qualifierTerm": "Del"
+        }
+      ]
+    }
+  ],
+  "route": {
+    "maxCost": {
+      "amount": 3322,
+      "currencyCodeTerm": "usd"
+    }
+  }
+}
